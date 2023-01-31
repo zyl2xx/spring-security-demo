@@ -62,6 +62,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         //添加过滤器
         http.addFilterBefore(authenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
 
+
         //配置异常处理器
         http.exceptionHandling()
                 //配置认证失败处理器
